@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>ORDER 66</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+	
+<body>
+<!-- form outline-->
+	<div class="container">
+	<h1 class="display-1 text-center my-5 mb-2">PIZZA CAKE</h1>
+	<h1 class="display-2 text-center mb-4">Place your order below</h1>
+    <br><br>
+    <h2 class="display-3 text-center">SIZE</h2>
+	<h2 class="display-3 text-center">personal (6$) | medium ($10) | large($14) | xl($16)</h2>
+
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="sizeRadios"  value="Personal">
+		<label class="form-check-label" for="exampleRadios1">
+		Personal
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="sizeRadios"  value="Medium">
+		<label class="form-check-label" for="exampleRadios2">
+		Medium
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="sizeRadios"  value="Large" checked>
+		<label class="form-check-label" for="exampleRadios1">
+		Large
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="sizeRadios" value="XL">
+		<label class="form-check-label" for="exampleRadios2">
+		Extra Large
+		</label>
+	</div>
+	
+	
+	<h2 class="display-3 text-center my-3 mb-4">ANIMALS | pep | saus | can bac | ground bf | anchovy | chkn: first free + $1 ea. after</h2>
+
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="meatChecks" value="Pepperoni">
+		<label class="form-check-label" for="exampleRadios1">
+		Pepperoni
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="meatChecks" value="Sausage">
+		<label class="form-check-label" for="exampleRadios2">
+		Sausage
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="meatChecks" value="Canadian Bacon">
+		<label class="form-check-label" for="exampleRadios1">
+		Canadian Bacon
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="meatChecks" value="Ground Beef">
+		<label class="form-check-label" for="exampleRadios2">
+		Ground Beef
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="meatChecks" value="Anchovy">
+		<label class="form-check-label" for="exampleRadios1">
+		Anchovy
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="meatChecks" value="Chicken">
+		<label class="form-check-label" for="exampleRadios2">
+		Chicken
+		</label>
+	</div>
+
+	
+	<h2 class="display-3 text-center my-3 mb-4">DAIRY | reg. | none | xtra (+$3)</h2>
+	
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="cheeseRadios" value="Regular" checked>
+		<label class="form-check-label" for="exampleRadios1">
+		Regular
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="cheeseRadios" value="No Cheese">
+		<label class="form-check-label" for="exampleRadios2">
+		None
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="cheeseRadios" value="Extra Cheese">
+		<label class="form-check-label" for="exampleRadios1">
+		Extra Cheese
+		</label>
+	</div>
+
+
+	
+	<h2 class="display-3 text-center my-3 mb-4">BORDER | plain | garlic butter | cheese stuffed (+$3) | spicy | house special</h2>
+	
+	
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="crustRadios" value="Plain" checked>
+		<label class="form-check-label" for="exampleRadios1">
+		Plain
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="crustRadios" value="Garlic Butter">
+		<label class="form-check-label" for="exampleRadios2">
+		Garlic Butter
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="crustRadios" value="Cheese Stuffed">
+		<label class="form-check-label" for="exampleRadios1">
+		Cheese Stuffed
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="crustRadios" value="Spicy Crust">
+		<label class="form-check-label" for="exampleRadios2">
+		Spicy
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="crustRadios" value="House Special Crust">
+		<label class="form-check-label" for="exampleRadios1">
+		House Special
+		</label>
+	</div>
+
+	
+	<h2 class="display-3 text-center my-3 mb-4">SAUCE | marinara | white | bbq | none</h2>
+	
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="sauceRadios"  value="Marinara" checked>
+		<label class="form-check-label" for="exampleRadios1">
+		Marinara
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="sauceRadios"  value="White">
+		<label class="form-check-label" for="exampleRadios2">
+		White
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="sauceRadios"  value="BBQ">
+		<label class="form-check-label" for="exampleRadios1">
+		BBQ
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="sauceRadios" value="none">
+		<label class="form-check-label" for="exampleRadios2">
+		None
+		</label>
+	</div>
+	
+	
+	<h2 class="display-3 text-center my-3 mb-4">PLANTS | tom | onion | olives | green pep | mush | pineapple | spinach | jalapeno; first free + $1 ea. after</h2>
+	
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="vegetables" value="Tomatoes">
+		<label class="form-check-label" for="exampleRadios1">
+		Tomatoes
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="vegetables" value="Onion">
+		<label class="form-check-label" for="exampleRadios2">
+		Onion
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="vegetables" value="Olives">
+		<label class="form-check-label" for="exampleRadios1">
+		Olives
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="vegetables" value="Green Peppers">
+		<label class="form-check-label" for="exampleRadios2">
+		Green Peppers
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="vegetables" value="Mushroom">
+		<label class="form-check-label" for="exampleRadios1">
+		Mushroom
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="vegetables" value="Pineapple">
+		<label class="form-check-label" for="exampleRadios2">
+		Pineapple
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="vegetables" value="Spinach">
+		<label class="form-check-label" for="exampleRadios1">
+		Spinach
+		</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" name="vegetables" value="Jalapeno">
+		<label class="form-check-label" for="exampleRadios2">
+		Jalapeno
+		</label>
+	</div>
+	<div style="text-align:center;">
+	<button type="button" onclick="calculate()" data-toggle="modal" data-target="#receipt" class="btn btn-outline-danger" id="order">EXECUTE ORDER 66!</button>
+	</div>
+</div>
+<!--	
+	print receipt with total
+	
+	order button
+-->
+
+
+
+
+<script>
+var totalCost;
+var sizeValue;
+var meatValue = "";
+var cheeseValue;
+var crustValue;
+var sauceValue;
+var vegValue = "";
+function calculate() {
+// Look at radio's of name sizeRadios ;
+	// if checked value = (p,m,l,xl) 
+	//add cost to price
+	
+	//loop traverses array, incrementing, until .checked is found. 
+	//array[i] .value populates form 
+	var size = document.getElementsByName("sizeRadios");
+	var sizeValue;
+	var sizeCost;
+	var totalCost;
+	for (var i = 0; i < size.length; i++) {
+		if (size[i].type === 'radio' && size[i].checked) {
+			sizeValue = size[i].value;
+			}
+		}
+	//So far we have taken all the input, put into an array, traversed the array looking for the one checked
+	//then we have taken that elements value and stored it in the variable sizeValue
+	//Next we need to compare sizeValue to our predetermined sizes, and set sizeCost to the appropriate amount
+	if (sizeValue == "Personal") {
+		sizeCost = 6;
+		}
+	else if (sizeValue == "Medium") {
+		sizeCost = 10;
+		}
+	else if(sizeValue == "Large") {
+		sizeCost = 14;
+		}
+	else if (sizeValue == 'XL') {
+		sizeCost = 16;
+		}
+	totalCost = sizeCost;
+    
+	console.log('totalCost = ' + totalCost);
+	
+	//Meats
+	var meats = [].slice.call(document.querySelectorAll('input[name=meatChecks]:checked')); // take NodeList and convert to array, fixed read errors!
+	var meatCost=0;
+	var meatValue = "";
+	for (i = 0; i < meats.length; i++ ) {
+		meatValue += meats[i].value + ', ';
+		console.log(meatValue);
+	}
+	
+	
+		
+	if (meats.length > 1) {
+		meatCost = (meatCost +(meats.length - 1) );
+		}	
+	totalCost = totalCost + meatCost;
+		console.log('totalCost = ' + totalCost);
+		
+	//Cheese
+	var cheese = document.getElementsByName('cheeseRadios');
+	var cheeseValue;
+	var cheeseCost = 0;
+	for (var i = 0; i < cheese.length; i++) {
+		if (cheese[i].type === 'radio' && cheese[i].checked) {
+			cheeseValue = cheese[i].value;
+			}
+		}
+		if (cheeseValue == 'Extra Cheese') {
+			cheeseCost = 3;
+			totalCost = totalCost + cheeseCost;
+			}
+		console.log('totalCost = ' + totalCost);
+		
+	//Crust
+	
+	var crust = document.getElementsByName('crustRadios');
+	var crustValue;
+	var crustCost = 0;
+	for (var i = 0; i < crust.length; i++) {
+		if (crust[i].type === 'radio' && crust[i].checked) {
+			crustValue = crust[i].value;
+			}
+		}
+		if (crustValue == 'Cheese Stuffed') {
+			totalCost = (totalCost + 3);
+			crustCost = 3;
+			}
+		console.log('totalCost = ' + totalCost );
+		
+	//Sauce
+		
+	var sauce = document.getElementsByName('sauceRadios');
+	var sauceValue;
+	for (var i = 0; i < sauce.length; i++) {
+		if (sauce[i].type === 'radio' && sauce[i].checked) {
+			sauceValue = crust[i].value;
+			}
+		}
+		
+	//Veggies
+	
+	
+	var veggies = [].slice.call(document.querySelectorAll('input[name=vegetables]:checked'));
+	var vegValue = "";
+	var vegCost=0;
+	for (i = 0; i < veggies.length; i++) {
+		vegValue += veggies[i].value + ', ';
+		}
+		
+	if (veggies.length > 1) {
+		vegCost = (vegCost + (veggies.length - 1));
+		}	
+	totalCost = totalCost + vegCost;
+		console.log('totalCost = ' + totalCost);
+		
+	//Write to Table
+	document.getElementById("size").innerHTML = "Size:   " +sizeValue;
+	document.getElementById("meat").innerHTML = "Meats:   " +meatValue;
+	document.getElementById("cheese").innerHTML = "Cheese:   " +cheeseValue;
+	document.getElementById("crust").innerHTML = "Crust:   " +crustValue;
+	document.getElementById("sauce").innerHTML = "Sauce:   " +sauceValue;
+	document.getElementById("veggies").innerHTML = "Veggies:   " +vegValue;
+	document.getElementById("total").innerHTML = "Total Cost:   ";
+	
+	document.getElementById("cost1").innerHTML = "+$" +sizeCost;
+	document.getElementById("cost2").innerHTML = "+$" +meatCost;
+	document.getElementById("cost3").innerHTML = "+$" +cheeseCost;
+	document.getElementById("cost4").innerHTML = "+$" +crustCost;
+	document.getElementById("cost5").innerHTML = "+$" +vegCost;
+	document.getElementById("cost6").innerHTML = "$" +totalCost;
+	
+	
+}
+</script>
+	<div class="modal" tabindex="-1" role="dialog" id="receipt">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Please review your order and Submit!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+								  <th scope="col">What You Ordered:</th>
+								  <th scope="col">Cost:</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								  <th scope="row" id="size"></th>
+								  <td id="cost1"></td>
+								</tr>
+								<tr>
+								  <th scope="row" id="meat"></th>
+								  <td id="cost2"></td>
+								  
+								</tr>
+								<tr>
+								  <th scope="row" id="cheese"></th>
+								  <td id="cost3"></td>
+								</tr>
+								<tr>
+								  <th scope="row" id="crust" ></th>
+								  <td id="cost4"></td>
+								</tr>
+								<tr>
+								  <th scope="row" id="sauce"></th>
+								  <td>+$0</td>
+								</tr>
+								<tr>
+								  <th scope="row" id="veggies"></th>
+								  <td id="cost5"></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th scope="row" id="total"></th>
+									<td id="cost6"></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Submit Order!</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

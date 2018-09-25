@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>EMPIRICALLY DELICIOUS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">	
+    </head>
+	
+<body>
+<!-- form outline-->
+  <nav>
+    <div class="nav-wrapper black">
+      <a class="brand-logo center">EMPIRE PIZZA</h1>
+    </div>
+  </nav>
+  
+  <!--SIZES-->
+  <div class="blue white-text darken-2">SIZE</div>
+  <br>
+    <p>
+      <label>
+        <input class="with-gap" name="size" type="radio" value="6" />
+        <span>SINGLE ($6) </span>
+      </label>
+      <label>
+        <input class="with-gap" name="size" type="radio" checked value="10" />
+        <span>MEDIUM ($10) </span>
+      </label>
+      <label>
+        <input class="with-gap" name="size" type="radio" value="14" />
+        <span>LARGE ($14) </span>
+      </label>
+      <label>
+        <input class="with-gap" name="size" type="radio" value="16" />
+        <span>I'M JUST BIG-BONED ($16) </span>
+      </label>
+    </p>
+    <br>
+      
+    <!--CRUST-->
+    <div class="blue white-text darken-2">BORDER</div>
+    <br>
+    <p>
+      <label>
+        <input class="with-gap" name="crust" type="radio" checked value="p" />
+        <span>PLAIN</span>
+      </label>
+      <label>
+        <input class="with-gap" name="crust" type="radio" value="hs" />
+        <span>HOUSE SPECIAL</span>
+      </label>
+      <label>
+        <input class="with-gap" name="crust" type="radio" value="cs" />
+        <span>CHEESE STUFFED (+$3)</span>
+      </label>
+      <label>
+        <input class="with-gap" name="crust" type="radio" value="s" />
+        <span>SPICY</span>
+      </label>
+      <label>
+        <input class="with-gap" name="crust" type="radio" value="gb" />
+        <span>GARLIC BUTTER</span>
+      </label>
+    </p>
+    <br>
+    
+    <!--SAUCE-->
+    <div class="blue white-text darken-2">GRAVY</div>
+    <br>
+    <p>
+      <label>
+        <input class="with-gap" name="sauce" type="radio" checked value="m" />
+        <span>MARINARA</span>
+      </label>
+      <label>
+        <input class="with-gap" name="sauce" type="radio" value="b" />
+        <span>BBQ</span>
+      </label>
+      <label>
+        <input class="with-gap" name="sauce" type="radio" value="w" />
+        <span>WHITE</span>
+      </label>
+      <label>
+        <input class="with-gap" name="sauce" type="radio" value="n" />
+        <span>NONE</span>
+      </label>
+    </p>
+    <br>
+  
+    <!--CHEESE-->
+    <div class="blue white-text darken-2">DAIRY</div>
+    <br>
+    <p>
+      <label>
+        <input class="with-gap" name="cheese" type="radio" checked value="r" />
+        <span>REGULAR</span>
+      </label>
+      <label>
+        <input class="with-gap" name="cheese" type="radio" value="x" />
+        <span>EXTRA (+$3)</span>
+      </label>
+      <label>
+        <input class="with-gap" name="cheese" type="radio" value="n" />
+        <span>NONE</span>
+      </label>
+    </p>
+    <br>
+  
+    <!--MEATS-->
+    <div class="blue white-text darken-2">ANIMALS (first included; +$1 each additional)</div>
+    <br>
+    <p>
+      <label>
+        <input type="checkbox" name="meat" value="p" />
+        <span>PEPPERONI</span>
+      </label>
+      <label>
+        <input type="checkbox" name="meat" value="s" />
+        <span>SAUSAGE</span>
+      </label>
+      <label>
+        <input type="checkbox" name="meat" value="cb" />
+        <span>CANADIAN BACON</span>
+      </label>
+   </p>
+   <p>
+      <label>
+        <input type="checkbox" name="meat" value="gb" />
+        <span>GROUND BEEF</span>
+      </label>
+      <label>
+        <input type="checkbox" name="meat" value="a" />
+        <span>ANCHOVY</span>
+      </label>
+      <label>
+        <input type="checkbox" name="meat" value="c" />
+        <span>CHICKEN</span>
+      </label>
+    </p>
+    <br>	
+  
+    <!--VEGETABLES-->
+    <div class="blue white-text darken-2">PLANTS (first included; +$1 each additional)</div>
+    <br>
+    <p>
+      <label>
+        <input type="checkbox" name="veg" value="gp" />
+        <span>GREEN PEPPER</span>
+      </label>
+      <label>
+        <input type="checkbox" name="veg" value="t" />
+        <span>TOMATO</span>
+      </label>
+      <label>
+        <input type="checkbox" name="veg" value="ol" />
+        <span>OLIVE</span>
+      </label>
+      <label>
+        <input type="checkbox" name="veg" value="on" />
+        <span>ONION</span>
+      </label>
+   </p>
+   <p>
+      <label>
+        <input type="checkbox" name="veg" value="j" />
+        <span>JALAPENO</span>
+      </label>
+      <label>
+        <input type="checkbox" name="veg" value="m" />
+        <span>MUSHROOM</span>
+      </label>
+      <label>
+        <input type="checkbox" name="veg" value="p" />
+        <span>PINEAPPLE</span>
+      </label>
+      <label>
+        <input type="checkbox" name="veg" value="s" />
+        <span>SPINACH</span>
+      </label>
+    </p>
+    <br>
+	
+	<!--ORDER BUTTON-->
+    <div>
+      <button class="btn waves-effect waves-light" onclick="order()">EXECUTE ORDER 66</button>
+	</div>
+	<a class="waves-effect waves-light btn modal-trigger" href="#modal1">ORDER</a>
+	<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+		
+<!--INLINE JS-->
+<script>
+
+var cheese;
+var crust;
+var meatArray = [];
+var size;
+var sauce;
+var total;
+var vegArray = [];
+
+function getBase() {
+
+  // get size value
+	size = document.getElementsByName("size");
+	for (var i = 0, length = size.length; i < length; i++)
+	{
+ 		if (size[i].checked)
+ 		{
+        size = size[i].value
+  			break; // break logic; radio button equals one value
+ 		}
+	}
+  if (!size) { alert("ERROR IN getBase() FOR size VALUE"); }
+  
+  // get crust value
+  crust = document.getElementsByName("crust");
+	for (var i = 0, length = crust.length; i < length; i++)
+	{
+ 		if (crust[i].checked)
+ 		{
+        crust = crust[i].value
+  			break; // break logic; radio button equals one value
+ 		}
+	}
+  if (!crust) { alert("ERROR IN getBase() FOR crust VALUE"); }
+  
+  // get sauce value
+  sauce = document.getElementsByName("sauce");
+	for (var i = 0, length = sauce.length; i < length; i++)
+	{
+ 		if (sauce[i].checked)
+ 		{
+        sauce = sauce[i].value
+  			break; // break logic; radio button equals one value
+ 		}
+	}
+  if (!sauce) { alert("ERROR IN getBase() FOR sauce VALUE"); }
+  
+  // get cheese value
+  cheese = document.getElementsByName("cheese");
+	for (var i = 0, length = cheese.length; i < length; i++)
+	{
+ 		if (cheese[i].checked)
+ 		{
+        cheese = cheese[i].value
+  			break; // break logic; radio button equals one value
+ 		}
+	}
+  if (!cheese) { alert("ERROR IN getBase() FOR cheese VALUE"); }
+	// alert(size + " " + sauce + " " + crust + " " + cheese); // debug
+
+};
+
+function getMeats() {
+
+	var meats;
+
+	meats = document.getElementsByName("meat");
+	for (var i = 0, length = meats.length; i < length; i++)
+	{
+		// add checked items to array
+ 		if (meats[i].checked && !meatArray.includes(meats[i].value))
+ 		{
+			meatArray.push(meats[i].value);
+		}
+		// removed items unchecked, but already in array
+		if (!meats[i].checked && meatArray.includes(meats[i].value))
+			{
+				meatArray.pop(meats[i].value);
+			} 
+	}
+	// alert(meatArray.length) // debug
+
+};
+
+function getVeg() {
+	
+	var veggies;
+
+	veggies = document.getElementsByName("veg");
+	for (var i = 0, length = veggies.length; i < length; i++)
+	{
+		// add checked items to array
+ 		if (veggies[i].checked && !vegArray.includes(veggies[i].value))
+ 		{
+			vegArray.push(veggies[i].value);
+		}
+		// removed items unchecked, but already in array
+		if (!veggies[i].checked && vegArray.includes(veggies[i].value))
+			{
+				vegArray.pop(veggies[i].value);
+			} 
+	}
+	// alert(vegArray.length) // debug
+
+};
+
+function calcCost() {
+
+	var total; // reset total value on each order
+	total = parseInt(size); // convert to int value
+
+	switch (crust) {
+		case "p": // plain
+			break;
+		case "hs": // house special
+			break;
+		case "cs": // cheese stuffed
+				total = total + 3;
+			break;
+		case "s": // spicy
+			break;
+		case "gb": // garlic butter
+			break;
+		default:
+			break;
+	}
+
+	switch (cheese) {
+		case "r": // regular
+			break;
+		case "x": // extra cheese
+				// +$3
+				total = total + 3;
+			break;
+		case "n": // none
+			break;
+		default:
+			break;
+	}
+
+	if (meatArray.length > 1) 
+	{
+		var shift = meatArray.shift()
+		meatArray.forEach(function(val) {
+			// add $1 for each additional meat in the array
+			total = total + 1;
+		});
+		meatArray.push(shift);
+	}
+
+	if (vegArray.length > 1) 
+	{
+		var shift = vegArray.shift();
+		vegArray.forEach(function(val) {
+			// add $1 for each additional veg in the array
+			total = total + 1
+		});
+		vegArray.push(shift);
+	}
+
+	if (!total) { alert("ERROR IN calcCost FOR total VALUE"); }
+	
+	displayReceipt(total);
+
+};
+
+function displayReceipt(pTotal) {
+
+	alert(pTotal + " total");
+	// display values for compiled receipt on order confirmation
+
+};
+
+function order() {
+
+	getBase();
+	getMeats();
+	getVeg();
+
+	calcCost();
+
+};
+ 
+
+/// END CD CODE
+	
+/* 	//Meats
+	var meats = [].slice.call(document.querySelectorAll('input[name=meatChecks]:checked')); // take NodeList and convert to array, fixed read errors!
+	var meatCost=0;
+	var meatValue = "";
+	for (i = 0; i < meats.length; i++ ) {
+		meatValue += meats[i].value + ', ';
+		console.log(meatValue);
+	}
+	
+	
+		
+	if (meats.length > 1) {
+		meatCost = (meatCost +(meats.length - 1) );
+		}	
+	totalCost = totalCost + meatCost;
+		console.log('totalCost = ' + totalCost);
+		
+	//Cheese
+	var cheese = document.getElementsByName('cheeseRadios');
+	var cheeseValue;
+	var cheeseCost = 0;
+	for (var i = 0; i < cheese.length; i++) {
+		if (cheese[i].type === 'radio' && cheese[i].checked) {
+			cheeseValue = cheese[i].value;
+			}
+		}
+		if (cheeseValue == 'Extra Cheese') {
+			cheeseCost = 3;
+			totalCost = totalCost + cheeseCost;
+			}
+		console.log('totalCost = ' + totalCost);
+		
+	//Crust
+	
+	var crust = document.getElementsByName('crustRadios');
+	var crustValue;
+	var crustCost = 0;
+	for (var i = 0; i < crust.length; i++) {
+		if (crust[i].type === 'radio' && crust[i].checked) {
+			crustValue = crust[i].value;
+			}
+		}
+		if (crustValue == 'Cheese Stuffed') {
+			totalCost = (totalCost + 3);
+			crustCost = 3;
+			}
+		console.log('totalCost = ' + totalCost );
+		
+
+	//Veggies
+	
+	
+	var veggies = [].slice.call(document.querySelectorAll('input[name=vegetables]:checked'));
+	var vegValue = "";
+	var vegCost=0;
+	for (i = 0; i < veggies.length; i++) {
+		vegValue += veggies[i].value + ', ';
+		}
+		
+	if (veggies.length > 1) {
+		vegCost = (vegCost + (veggies.length - 1));
+		}	
+	totalCost = totalCost + vegCost;
+		console.log('totalCost = ' + totalCost);
+		
+	//Write to Table
+	document.getElementById("size").innerHTML = "Size:   " +sizeValue;
+	document.getElementById("meat").innerHTML = "Meats:   " +meatValue;
+	document.getElementById("cheese").innerHTML = "Cheese:   " +cheeseValue;
+	document.getElementById("crust").innerHTML = "Crust:   " +crustValue;
+	document.getElementById("sauce").innerHTML = "Sauce:   " +sauceValue;
+	document.getElementById("veggies").innerHTML = "Veggies:   " +vegValue;
+	document.getElementById("total").innerHTML = "Total Cost:   ";
+	
+	document.getElementById("cost1").innerHTML = "+$" +sizeCost;
+	document.getElementById("cost2").innerHTML = "+$" +meatCost;
+	document.getElementById("cost3").innerHTML = "+$" +cheeseCost;
+	document.getElementById("cost4").innerHTML = "+$" +crustCost;
+	document.getElementById("cost5").innerHTML = "+$" +vegCost;
+	document.getElementById("cost6").innerHTML = "$" +totalCost;
+	
+	
+} */
+</script>
+	<div class="modal" tabindex="-1" role="dialog" id="receipt">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Please review your order and Submit!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+								  <th scope="col">What You Ordered:</th>
+								  <th scope="col">Cost:</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								  <th scope="row" id="size"></th>
+								  <td id="cost1"></td>
+								</tr>
+								<tr>
+								  <th scope="row" id="meat"></th>
+								  <td id="cost2"></td>
+								  
+								</tr>
+								<tr>
+								  <th scope="row" id="cheese"></th>
+								  <td id="cost3"></td>
+								</tr>
+								<tr>
+								  <th scope="row" id="crust" ></th>
+								  <td id="cost4"></td>
+								</tr>
+								<tr>
+								  <th scope="row" id="sauce"></th>
+								  <td>+$0</td>
+								</tr>
+								<tr>
+								  <th scope="row" id="veggies"></th>
+								  <td id="cost5"></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th scope="row" id="total"></th>
+									<td id="cost6"></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Submit Order!</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

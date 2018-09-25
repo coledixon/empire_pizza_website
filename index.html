@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>EMPIRICALLY DELICIOUS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--JavaScript ref-->
+    <script src="pizza_shoppe.js"></script>
+    <!--Google Font APIs-->
+    <link rel = "stylesheet"
+     href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Materialize JS/CSS-->
+    <link rel = "stylesheet"
+     href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type = "text/javascript"
+     src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
+</head>
+	
+<body class="container">
+    <!--FORM OUTLINE-->
+    <nav>
+        <div class="nav-wrapper black">
+            <a class="brand-logo center">EMPIRE PIZZA</h1>
+        </div>
+    </nav>
+  
+     <ul class = "collapsible popout" data-collapsible = "accordion">
+        <li> <!--SIZES-->
+           <div class = "collapsible-header"><i class="material-icons">pie_chart</i>GIRTH</div>
+           <div class = "collapsible-body center-align">
+             <div class="row">
+                <form action="#">
+                  <p class="center-align">
+                    <input class="with-gap" name="size" type="radio" value="6" id="sml"/>
+                      <label for="sml">SINGLE ($6)</label>
+                    <input class="with-gap" name="size" type="radio" value="10" id="med" checked/>
+                      <label for="med">MEDIUM ($10)</label>
+                    <input class="with-gap" name="size" type="radio" value="14" id="lrg"/>
+                      <label for="lrg">LARGE ($14)</label>
+                    <input class="with-gap" name="size" type="radio" value="16" id="xl"/>
+                      <label for="xl">"I'M JUST BIG-BONED" ($16)</label>
+                  </p>
+                </form>
+             </div>
+         </li>
+         
+         <li> <!--CRUST-->
+            <div class = "collapsible-header"><i class="material-icons">radio_button_unchecked</i>BORDER</div>
+            <div class = "collapsible-body center-align">
+              <div class="row">
+                 <form action="#">
+                   <p class="center-align">
+                     <input class="with-gap" name="crust" type="radio" value="p" id="pl" checked/>
+                       <label for="pl">PLAIN</label>
+                     <input class="with-gap" name="crust" type="radio" value="hs" id="house"/>
+                       <label for="house">HOUSE SPECIAL</label>
+                     <input class="with-gap" name="crust" type="radio" value="cs" id="stuft"/>
+                       <label for="stuft">CHEESE STUFFED (+$3)</label>
+                     <input class="with-gap" name="crust" type="radio" value="gb" id="garl"/>
+                       <label for="garl">GARLIC BUTTER</label>
+                     <input class="with-gap" name="crust" type="radio" value="s" id="spcy"/>
+                       <label for="spcy">SPICY</label>
+                    </p>
+                 </form>
+              </div>
+          </li>
+
+          <li> <!--SAUCE-->
+            <div class = "collapsible-header"><i class="material-icons">opacity</i>GRAVY</div>
+            <div class = "collapsible-body center-align">
+              <div class="row">
+                 <form action="#">
+                   <p class="center-align">
+                     <input class="with-gap" name="sauce" type="radio" value="m" id="mar" checked/>
+                       <label for="mar">MARINARA</label>
+                     <input class="with-gap" name="sauce" type="radio" value="b" id="bbq"/>
+                       <label for="bbq">BBQ</label>
+                     <input class="with-gap" name="sauce" type="radio" value="w" id="wht"/>
+                       <label for="wht">WHITE</label>
+                     <input class="with-gap" name="sauce" type="radio" value="n" id="null"/>
+                       <label for="null">NONE</label>
+                    </p>
+                 </form>
+              </div>
+          </li>
+          
+          <li> <!--CHEESE-->
+            <div class = "collapsible-header"><i class="material-icons">local_pizza</i>DAIRY</div>
+            <div class = "collapsible-body center-align">
+              <div class="row">
+                 <form action="#">
+                   <p class="center-align">
+                     <input class="with-gap" name="cheese" type="radio" value="m" id="reg" checked/>
+                       <label for="reg">REGULAR</label>
+                     <input class="with-gap" name="cheese" type="radio" value="b" id="ex"/>
+                       <label for="ex">EXTRA (+$3)</label>
+                     <input class="with-gap" name="cheese" type="radio" value="w" id="no"/>
+                       <label for="no">NONE</label>
+                    </p>
+                 </form>
+              </div>
+          </li>
+
+          <li> <!--MEATS-->
+            <div class = "collapsible-header"><i class="material-icons">whatshot</i>ANIMALS</div>
+            <div class = "collapsible-body center-align">
+              <div class="row">
+                 <form action="#">
+                   <div><label><i>(first included; +$1 additional)</i></label></div>  
+                   <p class="center-align">
+                     <input type="checkbox" name="meat" value="p" id="pep" />
+                       <label for="pep">PEPPERONI</label>
+                     <input type="checkbox" name="meat" value="s" id="saus" />
+                       <label for="saus">SAUSAGE</label>
+                     <input type="checkbox" name="meat" value="cb" id="can" />
+                       <label for="can">CANADIAN BACON</label>
+                     <input type="checkbox" name="meat" value="gb" id="beef" />
+                       <label for="beef">GROUND BEER</label>
+                     <input type="checkbox" name="meat" value="a" id="anch" />
+                       <label for="anch">ANCHOVY</label>
+                     <input type="checkbox" name="meat" value="c" id="chkn" />
+                       <label for="chkn">CHICKEN</label>
+                    </p>
+                 </form>
+              </div>
+          </li>
+
+          <li> <!--VEGETABLES-->
+            <div class = "collapsible-header"><i class="material-icons">spa</i>PLANTS</div>
+            <div class = "collapsible-body center-align">
+              <div class="row">
+                 <form action="#">
+                   <div><label><i>(first included; +$1 additional)</i></label></div>  
+                   <p class="center-align">
+                     <input type="checkbox" name="veg" value="gp" id="gpep" />
+                       <label for="gpep">GREEN PEPPER</label>
+                     <input type="checkbox" name="veg" value="t" id="tom" />
+                       <label for="tom">SUN-DRIED TOMATO</label>
+                     <input type="checkbox" name="veg" value="ol" id="ol" />
+                       <label for="ol">BLACK OLIVE</label>
+                     <input type="checkbox" name="veg" value="on" id="on" />
+                       <label for="on">RED ONION</label>
+                     <input type="checkbox" name="veg" value="j" id="jalap" />
+                       <label for="jalap">JALAPENO</label>
+                     <input type="checkbox" name="veg" value="m" id="mush" />
+                       <label for="mush">MUSHROOM</label>
+                     <input type="checkbox" name="veg" value="p" id="pine" />
+                       <label for="pine">PINEAPPLE</label>
+                     <input type="checkbox" name="veg" value="s" id="spnch" />
+                       <label for="spnch">SPINACH</label>
+                    </p>
+                 </form>
+              </div>
+          </li>
+       </ul>
+	
+	<!--ORDER BUTTON-->
+    <div>
+      <button class="btn waves-effect waves-light" onclick="order()">EXECUTE ORDER 66</button>
+	</div>
+	<a class="waves-effect waves-light btn modal-trigger" href="#modal1">ORDER</a>
+	<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
+
+
+  </script>
+
+
+  <div class="modal" tabindex="-1" role="dialog" id="receipt">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Please review your order and Submit!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                          <th scope="col">What You Ordered:</th>
+                          <th scope="col">Cost:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <th scope="row" id="size"></th>
+                          <td id="cost1"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" id="meat"></th>
+                          <td id="cost2"></td>
+                          
+                        </tr>
+                        <tr>
+                          <th scope="row" id="cheese"></th>
+                          <td id="cost3"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" id="crust" ></th>
+                          <td id="cost4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" id="sauce"></th>
+                          <td>+$0</td>
+                        </tr>
+                        <tr>
+                          <th scope="row" id="veggies"></th>
+                          <td id="cost5"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row" id="total"></th>
+                            <td id="cost6"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Submit Order!</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
