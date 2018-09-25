@@ -6,7 +6,7 @@
 	<title>EMPIRICALLY DELICIOUS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--JavaScript ref-->
-    <script src="pizza_shoppe.js"></script>
+    <script src="app.js"></script>
     <!--Google Font APIs-->
     <link rel = "stylesheet"
      href = "https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -157,93 +157,29 @@
           </li>
        </ul>
 	
-	<!--ORDER BUTTON-->
-    <div>
-      <button class="btn waves-effect waves-light" onclick="order()">EXECUTE ORDER 66</button>
-	</div>
-	<a class="waves-effect waves-light btn modal-trigger" href="#modal1">ORDER</a>
-	<div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+	  <!--ORDER BUTTON-->
+    <div class="center-align">
+	    <a class="waves-effect waves-light btn modal-trigger" href="#modal-trigger">EXECUTE ORDER 66</a>
+	    <div id="modal-trigger" class="modal">
+        <div class="modal-content">
+          <h4>ORDER SUMMARY</h4>
+          <p>{formatted order data will go here}</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
-  
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, options);
+
+<script>
+ 
+  // inline jquery for Materialize
+  $(document).ready(function(){
+    // href attribute for .modal-trigger specifies modal ID to be triggered
+    $('.modal-trigger').leanModal();
   });
 
+</script>
 
-  </script>
-
-
-  <div class="modal" tabindex="-1" role="dialog" id="receipt">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Please review your order and Submit!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                          <th scope="col">What You Ordered:</th>
-                          <th scope="col">Cost:</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                          <th scope="row" id="size"></th>
-                          <td id="cost1"></td>
-                        </tr>
-                        <tr>
-                          <th scope="row" id="meat"></th>
-                          <td id="cost2"></td>
-                          
-                        </tr>
-                        <tr>
-                          <th scope="row" id="cheese"></th>
-                          <td id="cost3"></td>
-                        </tr>
-                        <tr>
-                          <th scope="row" id="crust" ></th>
-                          <td id="cost4"></td>
-                        </tr>
-                        <tr>
-                          <th scope="row" id="sauce"></th>
-                          <td>+$0</td>
-                        </tr>
-                        <tr>
-                          <th scope="row" id="veggies"></th>
-                          <td id="cost5"></td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th scope="row" id="total"></th>
-                            <td id="cost6"></td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Submit Order!</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
