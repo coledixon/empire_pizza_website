@@ -15,7 +15,7 @@ function getBase() {
 	{
  		if (size[i].checked)
  		{
-        	size = size[i].value
+        		size = size[i].value
   			break; // break logic; radio button equals one value
  		}
 	}
@@ -27,7 +27,7 @@ function getBase() {
 	{
  		if (crust[i].checked)
  		{
-        	crust = crust[i].value
+        		crust = crust[i].value
   			break; // break logic; radio button equals one value
  		}
 	}
@@ -51,7 +51,7 @@ function getBase() {
 	{
 		if (cheese[i].checked)
  		{
-        	cheese = cheese[i].value
+        		cheese = cheese[i].value
   			break; // break logic; radio button equals one value
  		}
 	}
