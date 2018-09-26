@@ -14,6 +14,11 @@ $(document).ready(function(){
 // remove item from ul
 $('.collection').on('click', '.secondary-content', function() {
   $(this).closest('li').remove();
+
+  // TODO
+  // recalc cost
+  // rerender HTML
+
 });
 
 // Materialize Switch event

@@ -109,38 +109,83 @@ function calcCost() {
 	var total; // reset total value on each order
 	total = parseInt(size); // convert to int value
 
-	switch (crust) {
-		case "p": // plain
+	switch (size) {
+		case "6":
+			size = "PERSONAL";
 			break;
-		case "hs": // house special
+		case "10":
+			size = "MEDIUM";
 			break;
-		case "cs": // cheese stuffed
-			total = total + 3;
+		case "14":
+			size = "LARGE";
 			break;
-		case "s": // spicy
-			break;
-		case "gb": // garlic butter
+		case "16":
+			size = "I'M JUST BIG-BONED";
 			break;
 		default:
+			size = "MEDIUM";
+			break;
+	}
+
+	switch (crust) {
+		case "p":
+			crust = "PLAIN CRUST";
+			break;
+		case "hs":
+			crust = "HOUSE SPECIAL CRUST";
+			break;
+		case "cs":
+			crust = "CHESSE STUFT CRUST";
+			total = total + 3;
+			break;
+		case "s":
+			crust = "SPICY CRUST";
+			break;
+		case "gb":
+			crust = "GARLIC BUTTER CRUST";
+			break;
+		default:
+			crust = "HOUSE SPECIAL CRUST";
+			break;
+	}
+
+	switch (sauce) {
+		case "m":
+			sauce = "MARINARA";
+			break;
+		case "b":
+			sauce = "BBQ SAUCE";
+			break;
+		case "w":
+			sauce = "WHITE SAUCE";
+			break;
+		case "n":
+			sauce = "NO SAUCE";
+			break;
+		default:
+			sauce = "MARINARA";
 			break;
 	}
 
 	switch (cheese) {
-		case "r": // regular
+		case "r":
+			cheese = "REG. CHEESE";
 			break;
-		case "x": // extra cheese
-			// +$3
+		case "ex":
+			cheese = "EXTRA CHEESE";
 			total = total + 3;
 			break;
-		case "n": // none
+		case "n":
+			cheese = "NO CHEESE";
 			break;
 		default:
+			cheese = "REG. CHEESE";
 			break;
 	}
 
 	if (meatArray.length > 1) 
 	{
-		var shift = meatArray.shift()
+		var shift = meatArray.shift();
 		meatArray.forEach(function(val) {
 			// add $1 for each additional meat in the array
 			total = total + 1;
@@ -159,6 +204,7 @@ function calcCost() {
 	}
 
 	if (!total) { alert("ERROR IN calcCost FOR total VALUE"); }
+	else { total = '$' + total.toString(); }
 	
 	// build receipt HTML
 	constructReceipt(total);
@@ -168,19 +214,21 @@ function calcCost() {
 function constructReceipt(pTotal) {
 
 	const ul = document.querySelector('.collection'); // locate collection class
+	const modal_header = document.querySelector('#order_summary');
+
+	modal_header.innerHTML =  size + ' || ' + pTotal + '<i class="material-icons">local_pizza</i>';
 
 	// add base to orderArray[]
-	orderArray.push(size); orderArray.push(crust);
-	orderArray.push(sauce); orderArray.push(cheese);
-
-	// add veg to orderArray[]
-	vegArray.forEach(function(veg) {
-		orderArray.push(veg);
-	});
+	orderArray.push(crust); orderArray.push(sauce); orderArray.push(cheese);
 
 	// add meat to orderArray[]
 	meatArray.forEach(function(meat) {
 		orderArray.push(meat);
+	});
+
+	// add veg to orderArray[]
+	vegArray.forEach(function(veg) {
+		orderArray.push(veg);
 	});
 	
 	// construct HTML receipt
