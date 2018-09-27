@@ -16,13 +16,8 @@ $('.collection').on('click', '.secondary-content', function() {
   
   var val = $(this).closest('div').html(); // get innerHTML value
   val = val.substring(0, val.indexOf('<')); // remove child elements from string
-  // alert(val);  
+
   recalcCost(val);
-
-
-  // TODO
-  // recalc cost
-  // rerender HTML
 
   $(this).closest('li').remove();
 });
