@@ -252,7 +252,7 @@ function recalcCost(pSansItem) {
 			var name = inputs[x].name;
 			var remove = document.getElementById(id);
 
-			remove.checked = false;
+			remove.checked = false; 
 
 			// default checks for radio values
 			switch (name) {
