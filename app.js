@@ -128,28 +128,12 @@ function calcCost() {
 	}
 
 	switch (crust) {
-		case "p":
-			crust = "PLAIN CRUST";
-			break;
-		case "hs":
-			crust = "HOUSE SPECIAL CRUST";
-			break;
-		case "cs":
-			crust = "CHESSE STUFT CRUST";
+		case "CHEESE STUFF CRUST":
 			total = total + 3;
-			break;
-		case "s":
-			crust = "SPICY CRUST";
-			break;
-		case "gb":
-			crust = "GARLIC BUTTER CRUST";
-			break;
-		default:
-			crust = "HOUSE SPECIAL CRUST";
 			break;
 	}
 
-	switch (sauce) {
+/* 	switch (sauce) {
 		case "m":
 			sauce = "MARINARA";
 			break;
@@ -165,21 +149,11 @@ function calcCost() {
 		default:
 			sauce = "MARINARA";
 			break;
-	}
+	} */
 
 	switch (cheese) {
-		case "r":
-			cheese = "REG. CHEESE";
-			break;
-		case "ex":
-			cheese = "EXTRA CHEESE";
+		case "EXTRA CHEESE":
 			total = total + 3;
-			break;
-		case "n":
-			cheese = "NO CHEESE";
-			break;
-		default:
-			cheese = "REG. CHEESE";
 			break;
 	}
 
@@ -265,6 +239,44 @@ function order() {
 
 	// calculate the total cost
 	calcCost();
+};
+
+function recalcCost(pSansItem) {
+
+	var def; // radios require default value
+	var inputs = document.getElementsByTagName("input");
+    for(var x=0; x < inputs.length; x++) {
+
+        if (inputs[x].value == pSansItem) {
+			var id = inputs[x].id;
+			var name = inputs[x].name;
+			var remove = document.getElementById(id);
+
+			remove.checked = false;
+
+			// default checks for radio values
+			switch (name) {
+				case "crust":
+					id = "house";
+					def = document.getElementById(id);
+					def.checked = true;
+					break;
+				case "sauce":
+					id = "mar";
+					def = document.getElementById(id);
+					def.checked = true;
+					break;
+				case "cheese":
+					id = "reg";
+					def = document.getElementById(id);
+					def.checked = true;
+					break;
+			}
+		}
+	}
+
+	clearList();
+	order();
 };
 
 // clear list functionality
