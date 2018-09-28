@@ -18,8 +18,8 @@ $('.collection').on('click', '.secondary-content', function() {
   val = val.substring(0, val.indexOf('<')); // remove child elements from string
 
   recalcCost(val);
-
   $(this).closest('li').remove();
+  
 });
 
 // Materialize Switch event
