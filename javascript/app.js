@@ -257,7 +257,7 @@ function recalcCost(pSansItem) {
 			// default checks for radio values
 			switch (name) {
 				case "crust":
-					id = "house";
+					id = "pl";
 					def = document.getElementById(id);
 					def.checked = true;
 					break;
