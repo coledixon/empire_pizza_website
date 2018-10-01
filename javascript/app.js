@@ -239,6 +239,7 @@ function order() {
 
 	// calculate the total cost
 	calcCost();
+	
 };
 
 function recalcCost(pSansItem) {
